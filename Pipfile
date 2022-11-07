@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 bentoml = "==1.0.8"
+ipykernel = "*"
 matplotlib = "*"
 numpy = "*"
 pandas = "*"

@@ -1,0 +1,11 @@
+service: "service.py:svc"
+labels:
+  owner: Keiran
+  project: Heart attack prediction service
+include:
+- "*.py"
+python:
+  packages:
+    - xgboost
+    - sklearn
+    - pydantic

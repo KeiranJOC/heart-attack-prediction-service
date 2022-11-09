@@ -4,7 +4,7 @@ from bentoml.io import JSON
 from pydantic import BaseModel
 
 
-# define Pydantic class to validate input
+# define Pydantic class to validate input, with a default request
 
 class PatientFeatures(BaseModel):
     age: int = 63

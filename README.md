@@ -43,6 +43,19 @@ This model will use demographic and clinical characteristics of patients present
 
 
 ### Training
+- Open a terminal window and `cd` into the project directory
+- Run `pipenv install` - this will install the libraries required to train the model
+- Run `pipenv shell` to enter the virtual environment with the required libraries
+- Run `python train.py`
 
+### Deploying
+- Install Docker Desktop
+- Start Docker Desktop
+- Run `bash deploy.sh` to build and containerize model - this assumes AWS CLI has been installed and configured
 
 ### Serving
+- The model is deployed on an AWS Fargate instance, however this is currently turned off
+- I have instead provided screenshots to demonstrate serving a prediction with the model
+
+![Image](./images/model_request.png)
+![Image](./images/model_response.png)

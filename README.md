@@ -57,5 +57,8 @@ This model will use demographic and clinical characteristics of patients present
 - The model is deployed on an AWS Fargate instance, however this is currently turned off
 - I have instead provided screenshots to demonstrate serving a prediction with the model
 
+1. Sending a sample request to the model at the Fargate instance's public IP address:
 ![Image](./images/model_request.png)
+
+2. Receiving a prediction from the model that the patient is likely to suffer from a heart attack:
 ![Image](./images/model_response.png)
